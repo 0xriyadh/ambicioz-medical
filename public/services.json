@@ -1,0 +1,58 @@
+[
+    {
+      "name": "Child Specialist Appointment",
+      "fee": 2000,
+      "description": " A pediatrician refers to a physician who provides medical care to the children and infants. A child specialist refers to a mental health practitioner who provides a mental therapy to children whose parents are involved in separation and divorce procedures.",
+      "img": "https://i.ibb.co/s2QyzKF/child-specialist-appointment.jpg",
+      "id": 1
+    },
+    {
+      "name": "Eye Checkup",
+      "fee": 600,
+      "description": "An eye examination is a series of tests that measure a person's ocular health and visual status, to detect abnormalities in the components of the visual system, and to determine how well the person can see.",
+      "img": "https://i.ibb.co/PQW4xkP/eye-checkup.jpg",
+      "id": 2
+    },
+    {
+      "name": "Monthly Baby Checkup",
+      "fee": 1200,
+      "description": "Prenatal care is medical care you get during pregnancy. At each prenatal care visit, your health care provider checks on you and your growing baby. Call your provider to schedule your first prenatal care checkup as soon as you know you're pregnant.",
+      "img": "https://i.ibb.co/KK2KXxD/baby-checkup.jpg",
+      "id": 3
+    },
+    {
+      "name": "Minor Surgery",
+      "fee": 6000,
+      "description": "Minor surgical procedures are defined as a set of procedures in which short surgical techniques are applied on superficial tissues, usually with local anesthesia, and minimal complications, that usually do not require postoperative resuscitation and need minimal equipment, many of which are used on a daily basis,",
+      "img": "https://i.ibb.co/bFBk0XT/Minor-Surgery.jpg",
+      "id": 4
+    },
+    {
+      "name": "Diabetes Checkup",
+      "fee": 500,
+      "description": "Daily diabetes check ups should include feet and blood sugar. Daily foot check ups are essential for people with diabetes. Especially for those with a history",
+      "img": "https://i.ibb.co/3kSdcQs/Diabetes-Check.jpg",
+      "id": 5
+    },
+    {
+      "name": "Dentist Checkup",
+      "fee": 2300,
+      "description": "A check-up allows your dentist to see if you have any dental problems and helps you keep your mouth healthy. Leaving problems untreated could make them more difficult to treat in the future, so it's best to deal with problems early, or, if possible, prevent them altogether.",
+      "img": "https://i.ibb.co/MSP6HFf/Dentist-Checkup.jpg",
+      "id": 6
+    },
+    {
+      "name": "Brain Scan",
+      "fee": 3500,
+      "description": "An examination of the brain, using radiological scanning techniques, used in medical diagnosis and scientific research. Your son will need a brain scan. The brain scan showed a build-up of fluid.",
+      "img": "https://i.ibb.co/7zCM1qw/brain-scan.jpg",
+      "id": 7
+    },
+    {
+      "name": "Cardiac Stress Test",
+      "fee": 900,
+      "description": "A cardiac stress test is a cardiological test that measures the heart's ability to respond to external stress in a controlled clinical environment. The stress response is induced by exercise or by intravenous pharmacological stimulation.",
+      "img": "https://i.ibb.co/qnZm09L/Cardiac-stress-test.jpg",
+      "id": 8
+    }
+  ]

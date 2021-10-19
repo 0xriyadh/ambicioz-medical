@@ -1,0 +1,30 @@
+[
+    {
+      "name": "Andrew Tart",
+      "rating": 5,
+      "words": "Best medical service i could imagine.",
+      "img": "https://i.ibb.co/Nn8KBG8/man1.png",
+      "id": 1
+    },
+    {
+      "name": "Ron Fur",
+      "rating": 4.5,
+      "words": "I can go to Ambicioz Medical College blindly with any physical issues",
+      "img": "https://i.ibb.co/4RpTfmn/man2.png",
+      "id": 2
+    },
+    {
+      "name": "Mariam Min",
+      "rating": 5,
+      "words": "Where else would you find such caring doctors?",
+      "img": "https://i.ibb.co/nDCbVzw/woman1.png",
+      "id": 3
+    },
+    {
+      "name": "Julia Vern",
+      "rating": 5,
+      "words": "Most trustworthy place for my kids.",
+      "img": "https://i.ibb.co/mRQq1Hm/Untitled-design-22.png",
+      "id": 3
+    }
+  ]
