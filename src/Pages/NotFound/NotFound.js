@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 const NotFound = () => {
     return (
         <div className="container">
-            <img className="w-75" src={error404Img} alt="" />
+            <img className="w-50" src={error404Img} alt="" />
             <br/>
-            <Link to="/"><Button>Return Home</Button></Link>
+            <Link to="/"><Button className="mb-5">Return Home</Button></Link>
         </div>
     );
 };
