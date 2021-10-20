@@ -5,7 +5,7 @@ const Review = ({review}) => {
     const { name, rating, words, img } = review;
     return (
         <Col className="d-flex align-items-stretch">
-            <Card>
+            <Card className="w-100">
                 <Card.Img variant="top" src={img} />
                 <Card.Body className="d-flex flex-column justify-content-between">
                     <div>

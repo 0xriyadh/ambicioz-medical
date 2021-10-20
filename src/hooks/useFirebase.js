@@ -1,6 +1,5 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword,signInWithEmailAndPassword, updateProfile, sendEmailVerification } from "firebase/auth";
 import { useEffect, useState } from "react";
-import { useHistory } from "react-router";
 import initializeAuthentication from "../Pages/Login/Firebase/firebase.init";
 
 
@@ -9,8 +8,9 @@ initializeAuthentication();
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
     
-    const history = useHistory();
+
     const auth = getAuth();
 
     const googleProvider = new GoogleAuthProvider();
@@ -21,6 +21,9 @@ const useFirebase = () => {
             })
             .catch(error => {
                 setError(error.message);
+            })
+            .finally(() => {
+                setIsLoading(false);
             })
     }
 
@@ -37,7 +40,10 @@ const useFirebase = () => {
             })
             .catch((error) => {
                 setError(error.message);
-            });
+            })
+            .finally(() => {
+                setIsLoading(false);
+            })
     }
 
     const logInWithEmailAndPassword = (email, password) => {
@@ -50,7 +56,10 @@ const useFirebase = () => {
             })
             .catch((error) => {
                 setError(error.message);
-            });
+            })
+            .finally(() => {
+                setIsLoading(false);
+            })
     }
 
     const updateUserProfile = (name) => {
@@ -82,7 +91,10 @@ const useFirebase = () => {
             })
             .catch((error) => {
                 setError(error.message);
-            });
+            })
+            .finally(() => {
+                setIsLoading(false);
+            })
     }
 
     useEffect(() => {
@@ -94,6 +106,7 @@ const useFirebase = () => {
             else {
                 setUser({});
             }
+            setIsLoading(false);
           });
     }, [])
 
@@ -105,7 +118,8 @@ const useFirebase = () => {
         createAcWithEmailPw,
         logInWithEmailAndPassword,
         updateUserProfile,
-        verifyUserEmail
+        verifyUserEmail,
+        isLoading
     }
 }
 

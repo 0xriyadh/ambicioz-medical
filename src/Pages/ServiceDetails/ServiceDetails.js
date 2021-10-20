@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { Card } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import useServices from '../../hooks/useServices';

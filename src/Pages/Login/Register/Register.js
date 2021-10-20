@@ -5,7 +5,7 @@ import useAuth from '../../../hooks/useAuth';
 import googleImg from '../../../images/icons/google.png';
 
 const Register = () => {
-    const { logInUsingGoogle, createAcWithEmailPw, verifyUserEmail, error, user } = useAuth();
+    const { logInUsingGoogle, createAcWithEmailPw, error, user } = useAuth();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
