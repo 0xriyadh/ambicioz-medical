@@ -15,16 +15,16 @@ const useFirebase = () => {
 
     const googleProvider = new GoogleAuthProvider();
     const logInUsingGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                setUser(result.user);
-            })
-            .catch(error => {
-                setError(error.message);
-            })
-            .finally(() => {
-                setIsLoading(false);
-            })
+        return signInWithPopup(auth, googleProvider)
+            // .then(result => {
+            //     setUser(result.user);
+            // })
+            // .catch(error => {
+            //     setError(error.message);
+            // })
+            // .finally(() => {
+            //     setIsLoading(false);
+            // })
     }
 
     const createAcWithEmailPw = (email, password, name) => {
@@ -119,7 +119,10 @@ const useFirebase = () => {
         logInWithEmailAndPassword,
         updateUserProfile,
         verifyUserEmail,
-        isLoading
+        isLoading,
+        setUser,
+        setError,
+        setIsLoading
     }
 }
 

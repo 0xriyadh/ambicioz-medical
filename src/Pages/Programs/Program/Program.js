@@ -1,8 +1,8 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
-const Doctor = ({doctor}) => {
-    const { name, position, email, img } = doctor;
+const Program = ({program}) => {
+    const { name, duration, details, img } = program;
     return (
         <Col className="d-flex align-items-stretch">
             <Card>
@@ -10,13 +10,13 @@ const Doctor = ({doctor}) => {
                 <Card.Body className="d-flex flex-column justify-content-between">
                     <div>
                         <Card.Title>{name}</Card.Title>
-                        <Card.Text className="fw-bold fs-4">
-                        {position}
+                        <Card.Text title={details}>
+                        {details.split('', 200)} . . .
                         </Card.Text>
                     </div>
                     <div>
-                        <Card.Text className="fw-bold">
-                            Email: { email }
+                        <Card.Text className="fw-bold text-primary">
+                            Program Duration: { duration } Months
                         </Card.Text>
                     </div>
                 </Card.Body>
@@ -25,4 +25,4 @@ const Doctor = ({doctor}) => {
     );
 };
 
-export default Doctor;
+export default Program;
