@@ -1,12 +1,13 @@
 # Ambicioz Medical 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## [Live Site Link](https://healthcare-related-websi-67bf7.web.app/)
 
 
 
-### `npm start`
+### Importnat notes about this projects:
+* kir
+* sdkfn
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
