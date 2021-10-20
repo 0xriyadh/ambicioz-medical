@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Col} from 'react-bootstrap';
+import { Card, Col } from 'react-bootstrap';
+import Rating from 'react-rating';
 
 const Review = ({review}) => {
     const { name, rating, words, img } = review;
@@ -16,7 +17,16 @@ const Review = ({review}) => {
                     </div>
                     <div>
                         <Card.Text className="fs-5 text-danger mt-2">
-                            Rating: { rating }
+                            <Rating
+                                initialRating={rating}
+                                emptySymbol="fa fa-star-o fa-2x"
+                                fullSymbol="fa fa-star fa-2x"
+                                readonly
+                            />
+                        <Rating
+                            initialRating={rating}
+                            readonly
+                            />
                         </Card.Text>
                     </div>
                 </Card.Body>
