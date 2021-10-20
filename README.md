@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# Ambicioz Medical 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## [Live Site Link](https://healthcare-related-websi-67bf7.web.app/)
 
-In the project directory, you can run:
+
 
 ### `npm start`
 
