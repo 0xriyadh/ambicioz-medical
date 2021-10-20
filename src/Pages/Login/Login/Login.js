@@ -35,8 +35,21 @@ const Login = () => {
     const handleLogin = (e) => {
         e.preventDefault();
         if (!user.email) {
-            logInWithEmailAndPassword(email, password);
-            history.push(redirect_url);
+            logInWithEmailAndPassword(email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    setUser(user);
+                    history.push(redirect_url);
+                    setError('');
+                })
+                .catch((error) => {
+                    setError(error.message);
+                })
+                .finally(() => {
+                    setIsLoading(false);
+                })
+            setText('')
         }
         else {
             setText("Please logout before trying to login.")

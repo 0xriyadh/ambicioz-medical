@@ -1,28 +1,59 @@
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import googleImg from '../../../images/icons/google.png';
 
 const Register = () => {
-    const { logInUsingGoogle, createAcWithEmailPw, error, user } = useAuth();
+    const { logInUsingGoogle, createAcWithEmailPw, error, user, setUser, setError, setIsLoading, updateUserProfile, verifyUserEmail } = useAuth();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [text, setText] = useState('');
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_url = location.state?.from.pathname || '/home';
 
     // let text;
     const handleRegistration = (e) => {
         e.preventDefault();
         if (!user.email) {
-            createAcWithEmailPw(email, password, name);
+            createAcWithEmailPw(email, password, name)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    setUser(user);
+                    setError('');
+                    updateUserProfile(name);
+                    history.push(redirect_url);
+                    verifyUserEmail();
+                })
+                .catch((error) => {
+                    setError(error.message);
+                })
+                .finally(() => {
+                    setIsLoading(false);
+                })
+            setText('')
         }
         else {
             setText("Please log out before creating another account.");
             console.log(text);
         }
-        
-        // updateUserProfile(name);
+    }
+
+    const googleLogin = () => {
+        logInUsingGoogle()
+            .then(result => {
+                setUser(result.user);
+                history.push(redirect_url);
+            })
+            .catch(error => {
+                setError(error.message);
+            })
+            .finally(() => {
+                setIsLoading(false);
+            })
     }
 
     const captureName = (e) => {
@@ -67,7 +98,7 @@ const Register = () => {
                 </Form>
                 <br />
                 <p className="fw-bold text-danger">{error}</p>
-                <Button onClick={logInUsingGoogle} variant="light"><img className="img-fluid" src={googleImg} alt="" /> Login With Google</Button>
+                <Button onClick={googleLogin} variant="light"><img className="img-fluid" src={googleImg} alt="" /> Login With Google</Button>
             </Container>
         </div>
     );

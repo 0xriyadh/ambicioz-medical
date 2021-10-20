@@ -16,50 +16,16 @@ const useFirebase = () => {
     const googleProvider = new GoogleAuthProvider();
     const logInUsingGoogle = () => {
         return signInWithPopup(auth, googleProvider)
-            // .then(result => {
-            //     setUser(result.user);
-            // })
-            // .catch(error => {
-            //     setError(error.message);
-            // })
-            // .finally(() => {
-            //     setIsLoading(false);
-            // })
     }
 
     const createAcWithEmailPw = (email, password, name) => {
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed in 
-                const user = userCredential.user;
-                // setUser(user);
-                console.log(user);
-                setError('');
-                updateUserProfile(name);
-                verifyUserEmail();
-            })
-            .catch((error) => {
-                setError(error.message);
-            })
-            .finally(() => {
-                setIsLoading(false);
-            })
+        return createUserWithEmailAndPassword(auth, email, password)
+
     }
 
     const logInWithEmailAndPassword = (email, password) => {
-        signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed in 
-                const user = userCredential.user;
-                setUser(user);
-                setError('');
-            })
-            .catch((error) => {
-                setError(error.message);
-            })
-            .finally(() => {
-                setIsLoading(false);
-            })
+        return signInWithEmailAndPassword(auth, email, password)
+            
     }
 
     const updateUserProfile = (name) => {
@@ -122,7 +88,10 @@ const useFirebase = () => {
         isLoading,
         setUser,
         setError,
-        setIsLoading
+        setIsLoading,
+        updateUserProfile,
+        verifyUserEmail
+
     }
 }
 
