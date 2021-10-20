@@ -7,6 +7,8 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import AuthProvider from './context/AuthProvider';
+import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
+import Services from './Pages/Home/Services/Services';
 
 function App() {
   return (
@@ -20,6 +22,12 @@ function App() {
             </Route>
             <Route path="/home">
               <Home></Home>
+            </Route>
+            <Route path="/services">
+              <Services></Services>
+            </Route>
+            <Route path="/servicedetails/:serviceId">
+              <ServiceDetails></ServiceDetails>
             </Route>
             <Route path="/login">
               <Login></Login>

@@ -5,14 +5,23 @@ import useAuth from '../../../hooks/useAuth';
 import googleImg from '../../../images/icons/google.png';
 
 const Register = () => {
-    const { logInUsingGoogle, createAcWithEmailPw, updateUserProfile, verifyUserEmail, error } = useAuth();
+    const { logInUsingGoogle, createAcWithEmailPw, verifyUserEmail, error, user } = useAuth();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [text, setText] = useState('');
 
+    // let text;
     const handleRegistration = (e) => {
         e.preventDefault();
-        createAcWithEmailPw(email, password, name);
+        if (!user.email) {
+            createAcWithEmailPw(email, password, name);
+        }
+        else {
+            setText("Please log out before creating another account.");
+            console.log(text);
+        }
+        
         // updateUserProfile(name);
     }
 
@@ -30,6 +39,9 @@ const Register = () => {
             <Container className="m-5">
                 <h2>Please Create An Account</h2>
                 <Form>
+                <Form.Text className="fs-4 text-danger">
+                    {text}
+                </Form.Text>
                 <Form.Group className="mb-3 text-start" controlId="formGridAddress1">
                     <Form.Label>Full Name</Form.Label>
                     <Form.Control onBlur={captureName} placeholder="Enter your full name" />
@@ -54,7 +66,7 @@ const Register = () => {
                     </Button>
                 </Form>
                 <br />
-                <p>{error}</p>
+                <p className="fw-bold text-danger">{error}</p>
                 <Button onClick={logInUsingGoogle} variant="light"><img className="img-fluid" src={googleImg} alt="" /> Login With Google</Button>
             </Container>
         </div>

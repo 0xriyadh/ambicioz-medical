@@ -1,8 +1,10 @@
 import React from 'react';
 import { Card, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Service = ({service}) => {
-    const { name, fee, description, img } = service;
+    const { name, fee, description, img, id } = service;
+    const serviceDetailUrl = `/servicedetails/${id}`
     return (
         <Col className="d-flex align-items-stretch">
             <Card>
@@ -18,7 +20,7 @@ const Service = ({service}) => {
                         <Card.Text className="fs-5 text-primary">
                             Fee: { fee } Tk
                         </Card.Text>
-                        <Button>Check Out</Button>
+                        <Link to={serviceDetailUrl}><Button>View Details</Button></Link>
                     </div>
                 </Card.Body>
             </Card>
