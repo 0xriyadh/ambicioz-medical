@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Drug and Alcohol Detox Programs",
+        "duration": "6",
+        "details": "Detox alone isn’t treatment, but it’s the first step to getting better for people who are dependent on alcohol. When someone with a dependence on alcohol suddenly stops drinking, usually within 6-24 hours after their last drink, they might develop withdrawal symptoms. This can start while they still have alcohol in their blood. If you need alcohol for your body to feel normal, then you likely need help. Getting through detox isn’t just a matter of willpower, and stopping 'cold turkey' without at least medical help is never recommended. In some cases, withdrawal can put your life at risk. Even when it’s not as serious, it’s still a big challenge.",
+        "img": "https://i.ibb.co/bsFr3FZ/Drug-and-Alcohol-Detox-Programs.png",
+        "id": 1
+    },
+    {
+        "name": "Medical Detox Programs",
+        "duration": "1.5",
+        "details": "Medical detoxification, or medical detox, is an essential first step in recovery from drug or alcohol addiction. Since alcohol withdrawal is life-threatening when severe, medical alcohol detox is an absolute necessity. Medical drug detox is indicated for all individuals who have shown signs of physical and psychological dependence on a substance.Your symptoms may last a week or more, typically hitting their worst within 24-72 hours. You’re more likely to stick with a detox program when you have lots of help.",
+        "img": "https://i.ibb.co/nn20rsQ/Medical-Detox-Programs.png",
+        "id": 2
+    },
+    {
+        "name": "Medication-Assisted Treatment Programs",
+        "duration": "2",
+        "details": "This TIP, Medication-Assisted Treatment for Opioid Addiction in Opioid Treatment Programs, incorporates the many changes in medication-assisted treatment for opioid addiction (MAT) that have occurred over the most active decade of change since the inception of this treatment modality approximately 40 years ago. The TIP describes the nature and dimensions of opioid use disorders and their treatment in the United States, including basic principles of MAT and historical and regulatory developments. It presents consensus panel recommendations and evidence-based best practices for treatment of opioid addiction in opioid treatment programs (OTPs).",
+        "img": "https://i.ibb.co/KyKw736/Medication-Assisted-Treatment-Programs.png",
+        "id": 3
+    },
+    {
+        "name": "Residential Treatment Programs",
+        "duration": "3",
+        "details": "Research studies on addiction treatment typically have classified programs into several general types or modalities. Treatment approaches and individual programs continue to evolve and diversify, and many programs today do not fit neatly into traditional drug adiction treatment classifications.Most, however, start with detoxification and medically managed withdrawal, often considered the first stage of treatment. Detoxification, the process by which the body clears itself of drugs, is designed to manage the acute and potentially dangerous physiological effects of stopping drug use. As stated previously, detoxification alone does not address the psychological, social, and behavioral problems associated with addiction and therefore does not typically produce lasting behavioral changes necessary for recovery. Detoxification should thus be followed by a formal assessment and referral to drug addiction treatment.",
+        "img": "https://i.ibb.co/fQ3DF9N/Residential-Treatment-Programs.png",
+        "id": 4
+    },
+    {
+        "name": "Long-Term Residential Treatment",
+        "duration": "9",
+        "details": "Long-term residential treatment provides care 24 hours a day, generally in non-hospital settings. The best-known residential treatment model is the therapeutic community (TC), with planned lengths of stay of between 6 and 12 months. TCs focus on the 'resocialization' of the individual and use the program’s entire community—including other residents, staff, and the social context—as active components of treatment. Addiction is viewed in the context of an individual’s social and psychological deficits, and treatment focuses on developing personal accountability and responsibility as well as socially productive lives. Treatment is highly structured and can be confrontational at times, with activities designed to help residents examine damaging beliefs, self-concepts, and destructive patterns of behavior and adopt new, more harmonious and constructive ways to interact with others. Many TCs offer comprehensive services, which can include employment training and other support services, onsite. Research shows that TCs can be modified to treat individuals with special needs, including adolescents.",
+        "img": "https://i.ibb.co/0hBRNyp/Long-Term-Residential-Treatment.png",
+        "id": 5
+    },
+    {
+        "name": "Cognitive Behavioural Therapy",
+        "duration": "2.5",
+        "details": "Cognitive behavioural therapy (CBT) is a talking therapy that can help you manage your problems by changing the way you think and behave. It's most commonly used to treat anxiety and depression, but can be useful for other mental and physical health problems. CBT is based on the concept that your thoughts, feelings, physical sensations and actions are interconnected, and that negative thoughts and feelings can trap you in a vicious cycle.",
+        "img": "https://i.ibb.co/WVqPGvT/Cognitive-Behavioural-Therapy.png",
+        "id": 6
+    }
+]

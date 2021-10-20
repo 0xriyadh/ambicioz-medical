@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Prof. Robin Sharma",
+        "position": "Neurosurgeon ",
+        "email": "dr.robin@ammedical.com",
+        "img": "https://i.ibb.co/st6XrMG/dr-robin.png",
+        "id": 1
+    },
+    {
+        "name": "Prof. Anna Fin",
+        "position": "Heart Specialist",
+        "email": "dr.anna@ammedical.com",
+        "img": "https://i.ibb.co/VxYhZLq/g1.png",
+        "id": 2
+    },
+    {
+        "name": "Dr. Vicky Roy",
+        "position": "Dermatologists",
+        "email": "dr.vicky@ammedical.com",
+        "img": "https://i.ibb.co/DLGqmr8/Untitled-design-27.png",
+        "id": 3
+    },
+    {
+        "name": "Dr. Emily Chan",
+        "position": "Cardiologists",
+        "email": "dr.emily@ammedical.com",
+        "img": "https://i.ibb.co/tCpFLhn/g2.png",
+        "id": 4
+    },
+    {
+        "name": "Dr. Sean Mun",
+        "position": "Ophthalmologists",
+        "email": "dr.sean@ammedical.com",
+        "img": "https://i.ibb.co/VTX02cW/g3.png",
+        "id": 5
+    },
+    {
+        "name": "Dr. Ross Hanamen",
+        "position": "Gastroenterologists",
+        "email": "dr.ross@ammedical.com",
+        "img": "https://i.ibb.co/DwLzVrg/Untitled-design-26.png",
+        "id": 6
+    },
+    {
+        "name": "Dr. Ven Crick",
+        "position": "Gynecologists",
+        "email": "dr.ven@ammedical.com",
+        "img": "https://i.ibb.co/hf28jxF/Untitled-design-23.png",
+        "id": 7
+    }
+  ]

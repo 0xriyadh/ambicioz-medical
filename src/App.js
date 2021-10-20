@@ -10,6 +10,8 @@ import AuthProvider from './context/AuthProvider';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import Services from './Pages/Home/Services/Services';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import Doctor from './Pages/FindADoctor/Doctor/Doctor';
+import Doctors from './Pages/FindADoctor/Doctors/Doctors';
 
 function App() {
   return (
@@ -29,6 +31,9 @@ function App() {
             </Route>
             <PrivateRoute path="/servicedetails/:serviceId">
               <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
+            <PrivateRoute path="/doctors">
+              <Doctors></Doctors>
             </PrivateRoute>
             <Route path="/login">
               <Login></Login>
