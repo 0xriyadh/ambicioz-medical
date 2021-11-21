@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyBqLzObumCBpxWfgzlg5UQZKTj5r6J816I",
-    authDomain: "healthcare-related-websi-67bf7.firebaseapp.com",
-    projectId: "healthcare-related-websi-67bf7",
-    storageBucket: "healthcare-related-websi-67bf7.appspot.com",
-    messagingSenderId: "474392752537",
-    appId: "1:474392752537:web:643ee1eb3bb3d6ce89a308"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID
   };
 
   
