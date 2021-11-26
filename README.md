@@ -7,7 +7,9 @@
 
 ### Importnat notes about this projects:
 * This project is solely developed by [Md. Mahadi Hassan Riyadh](https://github.com/mahadihassanriyadh)
-* This project was part of an assignment 
-* This project represents nothing serious, it is a learning project only
-* This project/website is about a Medical called Ambicioz Medical
-* There are some public and private pages in this website. To checkout the private pages one has to log in to the website.
+* Here patients can look for the suitable packages needed for their medical needs.
+* Visitors can find a doctor suitable for their needs from the find a doctor section after logging in.
+* Users can see any service details by clicking on the button details. 
+
+### Technoly Used:
+    HTML, CSS, JS, React, Firebase, Bootstrap, React Hook Form, React Router.
