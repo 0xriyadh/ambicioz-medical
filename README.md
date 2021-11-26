@@ -10,6 +10,7 @@
 * Here patients can look for the suitable packages needed for their medical needs.
 * Visitors can find a doctor suitable for their needs from the find a doctor section after logging in.
 * Users can see any service details by clicking on the button details. 
+* This site is responsive for mobile and tablet devices too.
 
 ### Technoly Used:
     HTML, CSS, JS, React, Firebase, Bootstrap, React Hook Form, React Router.
